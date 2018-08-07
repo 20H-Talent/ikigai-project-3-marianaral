@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact_information,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
