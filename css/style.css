@@ -1,15 +1,80 @@
+/* Normalize */
+*,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* headers */
+
+header {
+    text-align: center;
+    padding: 1em;
+    border-bottom: 5px solid rgb(47, 57, 68);
+    margin: 0 8px 2px;
+}
+
+h1 {
+    background-color: rgb(47, 57, 68);
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 40px 0;
+}
+
+h2 {
+    padding-bottom: 10px; 
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
+    padding: 1em .5em;
+    border-top: 2px solid rgb(47, 57, 68);
+    margin: 2px 8px 0;
 }
 
 .contact_information,
-.newsletter {
+.newsletter,
+.newsletter_format {
     display: flex;
     flex-direction: column;
 }
-.newsletter input {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+
+button {
+    background-color: rgb(108, 185, 180);
+    color: white;
+    width: 100%;
+    height: 3em;
 }
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight:bold; 
+}
+
+.newsletter_border {
+    border-top: 2px solid rgb(47, 57, 68);
+    padding-top: 1em;
+}
+
+footer {
+    text-align: center;
+}
+/* font-color */
+p {
+    color: rgb( 156, 165, 175);
+}
+
+h2,
+h3,
+legend,
+lable {
+    color: rgb(47, 57, 68);
+}
+
+
