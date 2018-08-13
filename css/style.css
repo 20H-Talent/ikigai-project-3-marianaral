@@ -24,6 +24,7 @@ body {
     color: rgb(156, 165, 175);
 }
 
+
 /* head */
 
 header {
@@ -53,6 +54,10 @@ h2 {
 
 /*main content*/
 
+main {
+    margin: 0 8px;
+}
+
 .contact_information {
     display: flex;
     flex-direction: column;
@@ -80,13 +85,20 @@ textarea, input, select {
     border-radius: 5px;
 }
 
-textarea:hover, input:hover {
+textarea:hover,
+input:hover {
     border: 2px solid rgb(99, 123, 151);
     
 }
 
-input, select {
-    padding: 1.5em;
+.contact_information input,
+.contact_information select {
+    padding: 0;
+    height: 50px;
+}
+
+select {
+    color: rgb( 156, 165, 175);
 }
 
 textarea {
@@ -100,11 +112,12 @@ input::placeholder {
     color: rgb( 156, 165, 175);
     font-style: italic;
     font-size: 10px;
+    padding: 1.5em;
 }
 
 .top-line {
     border-top: 2px solid rgb(47, 57, 68);
-    margin: 0 8px;
+    margin-top: 2px;
 }
 
 .newsletter_line{
@@ -132,6 +145,9 @@ input::placeholder {
     margin-top: 15px;
 }
 
+.newsletter input{
+    margin-right: 10px;
+}
     /*Submit button*/
 button {
     background-color: rgb(78, 187, 181);
@@ -145,6 +161,7 @@ button {
 
 }
 
+
 /*footer*/
 
 footer {
@@ -152,4 +169,56 @@ footer {
     font-style: italic;
 }
 
+/*---------DESKTOP MOCKUP----------*/
+
+@media (min-width: 768px) {
+
+    /*head*/
+
+    h2{
+        margin-top: 20px;
+    }
+
+    /*main content*/
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header ,
+    main {
+        margin: 0 20%;
+    }
+
+    .contact_information {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact_information input,
+    .contact_information select {
+        display: flex;
+        padding: 0;
+        width: 70%;
+        margin: 2.5px 0 2.5px;
+    }
+
+    .contact_information:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .zip_code_input label {
+        width: 30%;
+    }
+
+    input::placeholder {
+        padding: 1.5em;
+        }
+
+}
 
