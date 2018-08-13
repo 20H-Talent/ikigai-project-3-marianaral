@@ -209,7 +209,7 @@ footer {
     .contact_information:last-child {
         display: flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: flex-start;
     }
 
     .zip_code_input label {
